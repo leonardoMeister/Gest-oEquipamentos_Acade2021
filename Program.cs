@@ -11,17 +11,40 @@ namespace GestãoEquipamentos_Acade2021
         Equipamento[] list = new Equipamento[10];
         public Program()
         {
-            Equipamento x = new Equipamento(10,"asd", 2, "10/10/2021", "leonardo");
-            list[0] = x;
+
+
             Console.Read();
 
         }
 
         public void AdicionarEquipamento(Equipamento equipamento)
         {
+            for (int i = 0; i < list.Length; i++)
+            {
+                if (list[i] == null)
+                {
+                    list[i] = equipamento;
+                    return;
+                }
+            }
+        }
+        public void RemoverEquipamento(string nome)
+        {
+            for (int i = 0; i < list.Length; i++)
+            {
+                if (list[i].Nome == nome)
+                {
 
+                }
+            }
         }
 
+
+        public void TexteAdicionarEquipamento()
+        {
+            Equipamento x = new Equipamento(10, "asd", 2, "10/10/2021", "leonardo");
+            AdicionarEquipamento(x);
+        }
         public void CriarEquipamento()
         {
             Equipamento equipamento = new Equipamento();

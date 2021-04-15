@@ -24,8 +24,14 @@ namespace GestãoEquipamentos_Acade2021
 
         public Equipamento()
         {
-
+            this.preco = 0;
+            this.nome = "";
+            this.serie = 0;
+            this.data = "";
+            this.fabricante = "";
+            this.id = 0;
         }
+
         public Equipamento(float preco, string nome, int serie, string data, string fabricante)
         {
             this.Preco = preco;
