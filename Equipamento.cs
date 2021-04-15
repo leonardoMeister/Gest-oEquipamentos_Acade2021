@@ -22,6 +22,10 @@ namespace GestãoEquipamentos_Acade2021
         public string Fabricante { get => fabricante; set => fabricante = value; }
         public int Id { get => id; set => id = value; }
 
+        public Equipamento()
+        {
+
+        }
         public Equipamento(float preco, string nome, int serie, string data, string fabricante)
         {
             this.Preco = preco;
