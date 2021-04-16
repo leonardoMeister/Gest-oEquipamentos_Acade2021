@@ -14,6 +14,7 @@ namespace GestãoEquipamentos_Acade2021
         private string data;
         private string fabricante;
         private int id;
+        DateTime dataTime;
 
         public float Preco { get => preco; set => preco = value; }
         public string Nome { get => nome; set => nome = value; }
@@ -21,6 +22,7 @@ namespace GestãoEquipamentos_Acade2021
         public string Data { get => data; set => data = value; }
         public string Fabricante { get => fabricante; set => fabricante = value; }
         public int Id { get => id; set => id = value; }
+        public DateTime DataTime { get => dataTime; set => dataTime = value; }
 
         public Equipamento()
         {
